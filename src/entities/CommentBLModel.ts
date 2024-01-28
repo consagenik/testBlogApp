@@ -1,5 +1,5 @@
 export interface CommentBLModel {
-  id: number;
-  postId: number;
+  id?: number;
+  postId?: number;
   text: string;
 }

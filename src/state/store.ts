@@ -2,28 +2,20 @@ import {Action, configureStore, ThunkAction} from '@reduxjs/toolkit';
 import {setupListeners} from '@reduxjs/toolkit/query/react';
 import {combineReducers} from 'redux';
 import postReducer from './slices/postSlice';
+import commentReducer from './slices/commentSlice';
 
 const reducers = combineReducers({
   post: postReducer,
+  comment: commentReducer,
 });
-
-let createDebugger: any;
-
-if (process.env.REACT_APP_NODE_ENV !== 'production') {
-  createDebugger = require('redux-flipper').default;
-}
 
 export const store = configureStore({
   reducer: reducers,
   devTools: process.env.REACT_APP_NODE_ENV !== 'production',
   middleware: getDefaultMiddleware =>
-    process.env.REACT_APP_NODE_ENV === 'production'
-      ? getDefaultMiddleware({
-          serializableCheck: false,
-        })
-      : getDefaultMiddleware({
-          serializableCheck: false,
-        }).concat(createDebugger()),
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
 setupListeners(store.dispatch);

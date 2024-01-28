@@ -1,22 +1,26 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, Text, TouchableOpacity, View} from 'react-native';
+import {FlatList, TouchableOpacity, View} from 'react-native';
 
 import styles from './Posts.styles';
-import {setSelectedPostId} from '../../state/slices/postSlice.ts';
+
+import {setPosts, setSelectedPostId} from '../../state/slices/postSlice.ts';
 import {Api} from '../../api';
-import {PostBLModel} from '../../entities/PostBLModel.ts';
-import {useAppDispatch} from '../../state/hooks.ts';
+import {useAppDispatch, useAppSelector} from '../../state/hooks.ts';
+import PostBody from '../../components/posts/postBody/PostBody.tsx';
+import EmptyList from '../../components/emptyList/EmptyList.tsx';
+import Loader from '../../components/loader/Loader.tsx';
 
 export default function Posts({navigation}: any) {
   const dispatch = useAppDispatch();
 
-  const [posts, setPosts] = useState<PostBLModel[]>([]);
+  const {posts} = useAppSelector(state => state.post);
+
   const [postsLoaded, setPostsLoaded] = useState(false);
 
   async function getPosts() {
     try {
       const resp = await Api.getPosts();
-      setPosts(resp);
+      dispatch(setPosts(resp));
       setPostsLoaded(true);
     } catch (e) {
       console.log('API ERROR:', e);
@@ -28,28 +32,29 @@ export default function Posts({navigation}: any) {
   }, []);
 
   function goToPost(id: number) {
-    console.log(id);
     dispatch(setSelectedPostId(id));
     navigation.navigate('Post', {id});
   }
 
+  console.log(posts);
+
   return (
     <View style={styles.posts}>
-      {!postsLoaded && <Text style={styles.loadingText}>Loading posts...</Text>}
+      {!postsLoaded && <Loader text="Loading posts..." />}
 
-      {postsLoaded && posts.length === 0 && (
-        <Text style={styles.emptyListTitle}>No posts</Text>
-      )}
+      {postsLoaded && posts.length === 0 && <EmptyList text="No posts" />}
 
       {postsLoaded && posts.length > 0 && (
         <FlatList
           data={posts}
-          renderItem={({item}) => (
-            <TouchableOpacity key={item.id} onPress={() => goToPost(item.id)}>
-              <Text style={styles.postTitle}>{item.title}</Text>
-              <Text style={styles.postBody} numberOfLines={3}>
-                {item.body}
-              </Text>
+          renderItem={({item, index}) => (
+            <TouchableOpacity
+              key={item.id}
+              onPress={() => goToPost(item.id!)}
+              style={
+                index === posts.length - 1 ? styles.lastItem : styles.item
+              }>
+              <PostBody body={item.body} title={item.title} shorted />
             </TouchableOpacity>
           )}
         />

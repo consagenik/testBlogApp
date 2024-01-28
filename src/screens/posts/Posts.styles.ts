@@ -1,33 +1,14 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  loadingText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    padding: 10,
-    color: '#2e6fa4',
-    textAlign: 'center',
-  },
   posts: {
     flex: 1,
     backgroundColor: '#fefefe',
   },
-  emptyListTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    padding: 10,
-    color: '#999',
-    textAlign: 'center',
+  item: {
+    marginBottom: 20,
   },
-  postTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    padding: 10,
-    color: 'black',
-  },
-  postBody: {
-    fontSize: 16,
-    padding: 10,
-    color: '#333',
+  lastItem: {
+    marginBottom: 0,
   },
 });
