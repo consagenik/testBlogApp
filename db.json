@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Your Body Already Has a Built-in Weight Loss System that Works Like Wegovy, Ozempic and Mounjaro",
+      "body": "Wegovy, Ozempic and Mounjaro are weight loss and diabetes drugs that have made quite a splash in health news. They target regulatory pathways involved in both obesity and diabetes and are widely considered breakthroughs for weight loss and blood sugar control.\nBut do these drugs point toward a root cause of metabolic disease? What inspired their development in the first place?\nIt turns out your body produces natural versions of these drugs — also known as incretin hormones — in your gut. It may not be surprising that nutrients in food help regulate these hormones. But it may intrigue you to know that the trillions of microbes in your gut are key for orchestrating this process.\nI am a gastroenterologist at the University of Washington who studies how food and your gut microbiome affect health and disease. Here’s an inside-out perspective on the role natural gut hormones and healthy food play in metabolism and weight loss."
+    },
+    {
+      "id": 2,
+      "title": "Looking at a Familiar Place From a New Angle",
+      "body": "I open the truck’s windows and inhale the sound of a rapid. If the trickle of a spring creek is a solo acoustic at a coffee shop, the Lower Deschutes River in Oregon is a stadium concert. With her glassy glides and rumbling rapids, she can be a head-banging metal show or a classical symphony.\nThe fading rapid gives way to the crunch of tires on snow and the chatter of a kingfisher. Slow is the name of the game; it’s Canyon time now. I’m not surprised to have the entire river and canyon to myself on this snowy December day. Breaking new tracks always fills the spirit; I am alone but not lonely."
+    },
+    {
+      "id": 3,
+      "title": "The Abandoned House",
+      "body": "The Abandoned House is an incredible piece of architecture. It’s a beautiful and functional piece of architecture. It’s a beautiful and functional piece of architecture."
+    },
+    {
+      "id": 4,
+      "title": "Starting with No: Why Most People Shouldn’t Be Managers",
+      "body": "Being offered a management role or considering it is a common crossroads in many careers. I recently coached an engineer who shared:\n“My manager offered me a lead role. I’ve been thinking about leaving the team and finding a new role, but I think I’ll take it!”\nMy strong stance on who should and shouldn’t be a manager kicked in. My first reaction when someone tells me they want to be a manager is to test their motivation, so I asked him why he wanted to take that role. Here’s what he said:\nI want to mix things up. Coding all day long is stale.\nI want to have more influence.\nI want to be one of the decision-makers.\nConsidering I was already contemplating a team change, stepping into management seemed like a low-risk shift.\nReflecting on my career, I recall forming a strong opinion on who should be a manager when I reported to an ineffective and unmotivated manager (read the origins story). Throughout my experience, I have witnessed people transition into managerial roles and observed both successful and unsuccessful managerial styles. I also heard people express their motivation for taking on a bigger role, and here’s what I learned."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 4,
+      "body": "For me, managing a team was also knowing how to do everyone's work. Knowing what their work entails. When you can show people that you are able to do the small jobs as well. and understand the conditions they work in it helps a lot. Also I always though of the team as a ship. And we need everyone on board. Every player has a crucial part to play. And in that way we are all equal ."
+    },
+    {
+      "id": 2,
+      "postId": 4,
+      "body": "Way to challenge the glamorization of management and highlight its often overlooked challenges.\nI wonder if you've observed common pitfalls for individuals who underestimate the complexity of management. Also, do you see a shift in career motivations, where intrinsic rewards like team growth might outshine the traditional \"title chase\"?"
+    },
+    {
+      "id": 3,
+      "postId": 4,
+      "body": "I very much endorse your \"signs that you may be a good fit to be a manager\". They boil down to: do you care at least as much (and ideally more) about your team's performance as your own performance? I often ask people who say that they want to be a manager \"what do you want to manage?\". I look for action words.\"Being\" a manager is static. Managing and leading is active."
+    },
+    {
+      "id": 4,
+      "postId": 1,
+      "body": "Thanks for the insightful article. I have been retired now for about 17 years and during my career was offered a managerial position. I declined, because I knew I didn't to have the right skill set. But fortunately, my company had a dual latter structure. I was promoted to Senior Specialist instead, which is the same pay level as a manager, with the same level of recognition. As a specialist, it is my technical skills creatively applied that was the focus--which was project management, and without the burden of managing employees.\nAs a specialist, I worked many projects that included people at the director level. One of the things I learned from them is because managers have the responsibility to maintain the current orthodoxy, they are rewarded for being \"yes\" persons. Whereas directors need to think outside the box. So it is difficult to find managers who can flexibly move into a director position. Whereas someone from the specialist track could bring that creativity, but perhaps not the employee management part. People in at the director level need both."
+    },
+    {
+      "id": 5,
+      "postId": 1,
+      "body": "I think about these challenges often. So many leaders find themselves in roles, not because they are able to lead people but because they were strong in sales or showed confidence. The current recipe fails the leader and the employee."
+    },
+    {
+      "id": 6,
+      "postId": 2,
+      "body": "Sivon, you make some excellent points in this article. The power and prestige of leading people is enticing and sometimes misaligned with people's path to fulfilling work. I've coached many professionals transitioning to a team leadership position and discovered it's difficult to predict which ones will be successful and enjoy the new role. It takes time and investment for the individual to develop the new tool set they need to experience the intrinsic and extrinsic rewards of the new role, and therefore find inner-balance. The adpation is difficult for most, but of course, that's when the opportunity for personal growth is the greatest."
+    }
+  ]
+}
