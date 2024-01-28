@@ -54,7 +54,12 @@ export default function Post() {
 
       {!postLoaded && <Text style={styles.loadingText}>Loading post...</Text>}
 
-      {postLoaded && post && <Text style={styles.postTitle}>{post.title}</Text>}
+      {postLoaded && post && (
+        <>
+          <Text style={styles.postTitle}>{post.title}</Text>
+          <Text style={styles.postBody}>{post.body}</Text>
+        </>
+      )}
 
       <Text style={styles.sectionTitle}>Comments</Text>
 

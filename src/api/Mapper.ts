@@ -7,6 +7,7 @@ export const mapApiPostToBLPost = (post: PostApiModel): PostBLModel => {
   return {
     id: post.id,
     title: post.title,
+    body: post.body,
   };
 };
 
@@ -20,7 +21,7 @@ export const mapApiCommentToBLComment = (
   return {
     id: comment.id,
     postId: comment.postId,
-    body: comment.body,
+    text: comment.text,
   };
 };
 

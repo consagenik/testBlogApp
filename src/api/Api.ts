@@ -1,5 +1,4 @@
 import IApi from './IApi';
-import {PostApiModel} from './entities/PostApiModel.ts';
 import {
   mapApiCommentsToBLComments,
   mapApiPostsToBLPosts,
@@ -9,7 +8,8 @@ import {PostBLModel} from '../entities/PostBLModel.ts';
 import {CommentBLModel} from '../entities/CommentBLModel.ts';
 
 export default class Api implements IApi {
-  private baseUrl = 'https://my-json-server.typicode.com/typicode/demo';
+  private baseUrl =
+    'https://my-json-server.typicode.com/consagenik/testBlogApp/';
 
   private async fetchData(path: string, requestOptions: any): Promise<any> {
     try {

@@ -25,4 +25,9 @@ export default StyleSheet.create({
     padding: 10,
     color: 'black',
   },
+  postBody: {
+    fontSize: 16,
+    padding: 10,
+    color: '#333',
+  },
 });

@@ -38,20 +38,20 @@ export default function Posts({navigation}: any) {
       {!postsLoaded && <Text style={styles.loadingText}>Loading posts...</Text>}
 
       {postsLoaded && posts.length === 0 && (
-        <Text style={styles.postEmptyListTitle}>No posts</Text>
+        <Text style={styles.emptyListTitle}>No posts</Text>
       )}
 
       {postsLoaded && posts.length > 0 && (
         <FlatList
           data={posts}
-          renderItem={({item}) => {
-            console.log(item);
-            return (
-              <TouchableOpacity key={item.id} onPress={() => goToPost(item.id)}>
-                <Text style={styles.postTitle}>{item.title}</Text>
-              </TouchableOpacity>
-            );
-          }}
+          renderItem={({item}) => (
+            <TouchableOpacity key={item.id} onPress={() => goToPost(item.id)}>
+              <Text style={styles.postTitle}>{item.title}</Text>
+              <Text style={styles.postBody} numberOfLines={3}>
+                {item.body}
+              </Text>
+            </TouchableOpacity>
+          )}
         />
       )}
     </View>
